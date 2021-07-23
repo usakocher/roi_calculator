@@ -36,7 +36,7 @@ class House:
         self.insurance = insurance
         self.repairs = repairs
         self.propManage = self.rent * (self.mangRate / 100)
-        vacancy = self.vacRate/100 * self.income(self.rent, self.misc)
+        vacancy = self.vacRate/100 * self.rent
         expense = self.mortgage() + tax + insurance + repairs + self.feesHOA + self.PMI + vacancy + self.capEx + self.propManage
         return expense
 
