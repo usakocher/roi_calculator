@@ -3,6 +3,22 @@ import sys
 
 # Creates House class that stores object and functions
 class House:
+    """
+        The House class holds the variables for a house and contains the functions to calculate mortgage, income, expenses and return on investment.
+
+        Attributes for this class:
+        - value: expected to be a dollar amount
+        - closingCost: expected to be a dollar amount
+        - downPayment: expected to be a dollar amount
+        - interestRate: expected to be a percentage, in whole numbers
+        - years: expected to be an integer
+        - PMI: default is zero, becomes one percent if down payment is less than 20% of home value
+        - feesHOA: expected to be a dollar amount
+        - vacRate: expected to be a percentage, in whole numbers
+        - capEx: expected to be a dollar amount
+        - manRate: expected to be a percentage, in whole numbers
+    """
+
     def __init__(self, value, closingCost, downPayment, interestRate, years, PMI = 0, feesHOA = 0, vacRate = 5, capEx = 100, mangRate = 0):
         self.value = value
         self.closingCost = closingCost
